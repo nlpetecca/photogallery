@@ -1,0 +1,274 @@
+body {
+    width: 1310px;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    color: #007D7B;
+    float: left;
+    margin: 0;
+    padding: 26px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav li:not(:last-child) {
+    display: inline-block;
+    padding: 12px 48px;
+    margin: 28px 0 0 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #007D7B;
+}
+
+[href="#top"] {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 0 16px;
+    background-color: #007D7B;
+}
+
+[href="#top"]:hover {
+    color: #007D7B;
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    color: #000000;
+    background-color: #ffffff;
+    clear: left;
+}
+
+p:not(footer p:last-of-type) {
+    font-size: 20px;
+}
+
+#about {    
+    padding: 16px;
+    margin: 0;
+}
+
+.intro-row img {
+    float: left;
+    width: 850px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.intro-row p {
+    padding: 0 16px;
+    margin: 0;
+}
+
+.intro-right {
+    display: inline;
+    width: 420px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+h2, h3 {
+    font-size: 40px;
+}
+
+h3 {
+    clear: both;
+    margin: 0;
+    padding: 8px;
+}
+
+h3 + p {
+    padding: 8px;
+    margin: 0;
+}
+
+figure {
+    display: inline-block;
+    position: relative;
+}
+
+figure > img {
+    width: 420px;
+}
+
+figure:not(:nth-child(3n + 1)) {
+    margin: 10px;
+}
+
+figure:nth-child(3n + 1) {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+}
+
+.top-left-captions {
+    top: 8px;
+    left: 8px;
+}
+
+.bottom-left-captions {
+    bottom: 16px;
+    left: 8px;
+}
+
+.bottom-right-captions {
+    bottom: 16px;
+    right: 8px;
+}
+
+.white, footer {
+    color: #ffffff;
+}
+
+footer {
+    width: 850px;
+    margin: 0 auto;
+}
+
+footer :is(h2, p) {
+    text-align: center;
+}
+
+footer > h2 {
+    margin: 16px;
+}
+
+label, input {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+input {
+    padding: 8px 0 8px 8px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #007D7B;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 auto;
+    display: block;
+    padding: 12px 150px;
+    border-radius: 12px;
+    background-color: #007D7B;
+}
+
+footer p:last-of-type {
+    padding: 32px;
+    font-size: 16px;
+}
+
+@media(max-width: 850px) {
+    * {
+        clear: both;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        float: none;
+        padding: 24px 16px 0;
+    }
+
+    nav {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    nav li:not(:last-child) {
+        margin: 0;
+        padding: 16px;
+    }
+
+    [href="#top"] {
+        z-index: 1;
+    } 
+
+    .intro-row img {
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .intro-right {
+        width: 100%;
+        text-align: left;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    h3 + p {
+        padding: 8px;
+        margin: 16px 0;
+    }
+
+    figure {
+        display: block;
+    }
+
+    figure:not(:nth-child(3n + 1)) {
+        margin: 0;
+    }
+
+    figure > img {
+        width: 100%;
+    }
+
+    footer {
+        max-width: 95%;
+    }
+
+    button {
+        padding: 12px 100px;
+    }
+}
