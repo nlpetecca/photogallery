@@ -192,6 +192,15 @@ footer p:last-of-type {
     font-size: 16px;
 }
 
+.sidenote {
+    color: #fff000;
+    text-align: center;
+    padding: 16px;
+    margin: 16px;
+    border: 2px double yellow;
+    border-radius: 8px;
+}
+
 @media(max-width: 850px) {
     * {
         clear: both;
